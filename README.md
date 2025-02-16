@@ -11,8 +11,7 @@ personal-bank-account
 │   ├── amount.py
 │   └── personal_account.py
 ├── uml
-│   └── class_diagram.uml
-├── requirements.txt
+│   
 └── README.md
 ```
 
