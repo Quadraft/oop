@@ -1,6 +1,6 @@
 import random
 import re
-import datetime
+from datetime import datetime
 
 class UserUtil:
     @staticmethod
