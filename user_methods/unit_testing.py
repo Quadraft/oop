@@ -1,6 +1,8 @@
 import unittest
 from datetime import datetime
-from user import User, UserService, UserUtil  # Import the classes from their module
+from user_class import User
+from user_service_class import UserService
+from user_util_class import UserUtil
 
 class TestUser(unittest.TestCase):
     def test_get_details(self):
@@ -13,6 +15,7 @@ class TestUser(unittest.TestCase):
 
 class TestUserService(unittest.TestCase):
     def setUp(self):
+        UserService.users = {}  # Clear the users dictionary before each test
         self.user = User(1, "John", "Doe", "john.doe@example.com", "Password123!", datetime(1990, 1, 1))
         UserService.add_user(self.user)
 
